@@ -5,8 +5,8 @@
 
 class CityHub {
 public:
-    void addLamp(StreetLamp l);
-    void showStatus() const;
+    void addLamp(StreetLamp p_l);
+    void showStatus();
 
 private:
     std::vector<StreetLamp> lamps;

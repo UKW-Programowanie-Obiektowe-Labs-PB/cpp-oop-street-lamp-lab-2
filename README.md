@@ -75,5 +75,5 @@ dodanie nowej klasy do projektu (np. `src/TrafficLight.cpp`) **nie wymaga żadne
 
 ## Wymagania
 
-- GCC 13+ (wymagane dla pełnej obsługi `std::format` z C++20)
+- GCC z obsługą C++20
 - GNU Make
