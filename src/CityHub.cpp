@@ -12,7 +12,7 @@ void CityHub::showStatus() {
               << std::setw(10) << "Tryb" << "\n";
     std::cout << std::string(38, '-') << '\n';
 
-    int lampCount = (int)lamps.size();
+    int lampCount = lamps.size();
     for (int i = 0; i < lampCount; i++) {
         StreetLamp lamp = lamps[i];
         std::string mode = lamp.getIsManual() ? "ręczny" : "auto";
