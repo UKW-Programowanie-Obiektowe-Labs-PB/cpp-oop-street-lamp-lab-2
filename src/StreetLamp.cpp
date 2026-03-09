@@ -1,16 +1,16 @@
 #include "StreetLamp.hpp"
 #include <iostream>
 
-StreetLamp::StreetLamp(std::string p_id, int p_intensity, bool p_isManual) {
-    id = p_id;
-    isManual = p_isManual;
+StreetLamp::StreetLamp(std::string idValue, int intensityValue, bool manualMode) {
+    id = idValue;
+    isManual = manualMode;
 
-    if (p_intensity < 0 || p_intensity > 100) {
-        std::cerr << "[StreetLamp] Błąd: intensywność " << p_intensity
+    if (intensityValue < 0 || intensityValue > 100) {
+        std::cerr << "[StreetLamp] Błąd: intensywność " << intensityValue
                   << " poza zakresem [0, 100]. Ustawiono wartość 0.\n";
         intensity = 0;
     } else {
-        intensity = p_intensity;
+        intensity = intensityValue;
     }
 }
 
@@ -26,11 +26,11 @@ bool StreetLamp::getIsManual() {
     return isManual;
 }
 
-void StreetLamp::setIntensity(int p_value) {
-    if (p_value < 0 || p_value > 100) {
-        std::cerr << "[StreetLamp] Błąd: intensywność " << p_value
+void StreetLamp::setIntensity(int value) {
+    if (value < 0 || value > 100) {
+        std::cerr << "[StreetLamp] Błąd: intensywność " << value
                   << " poza zakresem [0, 100]. Wartość nie została zmieniona.\n";
         return;
     }
-    intensity = p_value;
+    intensity = value;
 }

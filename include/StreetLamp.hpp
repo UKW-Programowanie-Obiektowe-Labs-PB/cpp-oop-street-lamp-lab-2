@@ -4,13 +4,13 @@
 
 class StreetLamp {
 public:
-    StreetLamp(std::string p_id, int p_intensity, bool p_isManual);
+    StreetLamp(std::string idValue, int intensityValue, bool manualMode);
 
     std::string getId();
     int getIntensity();
     bool getIsManual();
 
-    void setIntensity(int p_value);
+    void setIntensity(int value);
 
 private:
     std::string id;

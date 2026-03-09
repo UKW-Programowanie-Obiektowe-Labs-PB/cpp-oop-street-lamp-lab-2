@@ -5,7 +5,7 @@
 
 class CityHub {
 public:
-    void addLamp(StreetLamp p_l);
+    void addLamp(StreetLamp lamp);
     void showStatus();
 
 private:

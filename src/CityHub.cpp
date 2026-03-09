@@ -2,8 +2,8 @@
 #include <format>
 #include <iostream>
 
-void CityHub::addLamp(StreetLamp p_l) {
-    lamps.push_back(p_l);
+void CityHub::addLamp(StreetLamp lamp) {
+    lamps.push_back(lamp);
 }
 
 void CityHub::showStatus() {
